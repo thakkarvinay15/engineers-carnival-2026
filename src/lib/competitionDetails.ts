@@ -244,7 +244,8 @@ export const COMPETITION_DETAILS: Record<
         heading: "BGMI — Team & Schedule",
         items: [
           "Team-based competition with 4 members per team.",
-          "Online knockout rounds take place between 16-17 September; exact dates will be communicated beforehand.",
+          "Online knockout rounds will take place on 17th September.",
+          "Exact time and slots of knockout rounds will be informed via email or in Whatsapp group.",
           "Finale: 18 September, on campus.",
           "Teams are divided into groups of 25 based on registrations.",
           "Each group plays 1 maps.",
