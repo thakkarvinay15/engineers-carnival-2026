@@ -276,7 +276,8 @@ export const COMPETITION_DETAILS: Record<
         heading: "VALORANT — Format",
         items: [
           "5 players per team.",
-          "Online knockout competition between 16–17 September; exact dates communicated beforehand.",
+          "Online knockout rounds will take place on 17th September.",
+          "Exact time and slots of knockout rounds will be informed via email or in Whatsapp group.",
           "Minimum 10 teams are required.",
           "Final is either BO3 or BO5 depending on available time.",
           "Map ban/selection and toss are handled through mapban.gg.",
