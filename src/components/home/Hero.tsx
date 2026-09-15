@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useSyncExternalStore } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import {
   TechGridOverlay,
   HeroDiagramMarks,
@@ -10,17 +9,6 @@ import {
   StatusBeacon,
   TelemetryBadge,
 } from "@/components/ui/TechDecorations";
-
-const easeOut = [0.16, 1, 0.3, 1] as const;
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 24 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: i * 0.1, duration: 0.7, ease: easeOut },
-  }),
-};
 
 const emptySubscribe = () => () => {};
 
@@ -121,31 +109,21 @@ export function Hero() {
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
         {/* Top Telemetry & Status Bar */}
-        <motion.div
-          custom={0}
-          variants={fadeUp}
-          initial="hidden"
-          animate="visible"
-          className="mb-8 flex flex-wrap items-center gap-3"
-        >
+        <div className="mb-8 flex flex-wrap items-center gap-3">
           <StatusBeacon label="EVENT DAY · 18 SEPT 2026" variant="amber" />
           <TelemetryBadge>PARUL INSTITUTE OF TECHNOLOGY</TelemetryBadge>
           <span className="hidden font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500 md:inline-block">
             {"//"} ORGANISED BY THE EXPLORER CLUB
           </span>
-        </motion.div>
+        </div>
 
         {/* Hero Grid */}
         <div className="grid grid-cols-1 items-end gap-12 lg:grid-cols-12 lg:gap-8">
           {/* Main Typography Column */}
           <div className="lg:col-span-8">
-            <motion.h1
+            <h1
               id="hero-heading"
               className="font-display leading-[0.84] tracking-tight"
-              custom={1}
-              variants={fadeUp}
-              initial="hidden"
-              animate="visible"
             >
               <span className="block text-[clamp(2.75rem,9.5vw,7.8rem)] font-black uppercase text-white drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)]">
                 Engineer&apos;s
@@ -156,43 +134,25 @@ export function Hero() {
                   &apos;26
                 </span>
               </span>
-            </motion.h1>
+            </h1>
 
-            <motion.p
-              className="mt-6 max-w-2xl font-body text-base leading-relaxed text-slate-300 md:text-xl md:leading-relaxed"
-              custom={2}
-              variants={fadeUp}
-              initial="hidden"
-              animate="visible"
-            >
+            <p className="mt-6 max-w-2xl font-body text-base leading-relaxed text-slate-300 md:text-xl md:leading-relaxed">
               One Day. Eight Competitions. Choose your challenge - robotics, esports, coding, and more.
-            </motion.p>
+            </p>
 
             {/* Countdown Box */}
-            <motion.div
-              className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center"
-              custom={3}
-              variants={fadeUp}
-              initial="hidden"
-              animate="visible"
-            >
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
               <div className="flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-slate-400">
                 <span className="h-2 w-2 rounded-full bg-cyan-400 animate-pulse" />
                 EVENT STARTS IN:
               </div>
               <CountdownTimer />
-            </motion.div>
+            </div>
           </div>
 
           {/* Right Action & Dossier Panel */}
           <div className="lg:col-span-4 lg:pb-2">
-            <motion.div
-              className="relative border border-white/10 bg-[#0a1226]/80 p-6 backdrop-blur-xl md:p-8"
-              custom={4}
-              variants={fadeUp}
-              initial="hidden"
-              animate="visible"
-            >
+            <div className="relative border border-white/10 bg-[#0a1226]/80 p-6 backdrop-blur-xl md:p-8">
               <HudCorner color="amber" size="md" />
 
               <div className="mb-4 flex items-center justify-between border-b border-white/10 pb-3">
@@ -243,18 +203,12 @@ export function Hero() {
                   </span>
                 </Link>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
 
         {/* Dynamic Metric Badges */}
-        <motion.div
-          className="mt-16 grid grid-cols-2 gap-3 border-t border-white/10 pt-8 sm:grid-cols-4 md:gap-4 lg:mt-20"
-          custom={5}
-          variants={fadeUp}
-          initial="hidden"
-          animate="visible"
-        >
+        <div className="mt-16 grid grid-cols-2 gap-3 border-t border-white/10 pt-8 sm:grid-cols-4 md:gap-4 lg:mt-20">
           {[
             { metric: "08", label: "Competitions", sub: "Traitors, Esports & Many More" },
             { metric: "01", label: "One Full Day", sub: "9:30 AM to 5:00 PM" },
@@ -274,7 +228,7 @@ export function Hero() {
               <div className="mt-0.5 font-mono text-[10px] text-slate-400">{item.sub}</div>
             </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

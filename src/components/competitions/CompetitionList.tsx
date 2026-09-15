@@ -112,7 +112,7 @@ export function CompetitionList() {
 
       {/* Competition Cards Grid */}
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2">
-        <AnimatePresence mode="popLayout">
+        <AnimatePresence mode="popLayout" initial={false}>
           {filteredCompetitions.map((comp) => {
             const meta = CATEGORY_MAP[comp.slug] || {
               category: "EVENT",

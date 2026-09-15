@@ -31,7 +31,7 @@ export function FinalCTA({
           viewport={{ once: true }}
           className="mb-6 flex flex-wrap items-center justify-center gap-3"
         >
-          <TelemetryBadge>ENGINEER'S CARNIVAL 2026</TelemetryBadge>
+          <TelemetryBadge>ENGINEER&apos;S CARNIVAL 2026</TelemetryBadge>
           <StatusBeacon label="REGISTRATIONS OPEN" variant="emerald" />
         </motion.div>
 

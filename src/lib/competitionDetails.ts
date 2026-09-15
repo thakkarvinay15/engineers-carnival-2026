@@ -248,7 +248,7 @@ export const COMPETITION_DETAILS: Record<
           "Exact time and slots of knockout rounds will be informed via email or in Whatsapp group.",
           "Finale: 18 September, on campus.",
           "Teams are divided into groups of 25 based on registrations.",
-          "Each group plays 1 maps.",
+          "Each group plays 1 map.",
           "Finale will consist of 2 maps only",
           "20 teams qualify for the finale.",
         ],
