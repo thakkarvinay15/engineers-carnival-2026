@@ -63,7 +63,7 @@ export default function ContactPage() {
             <div className="grid gap-8 md:grid-cols-2">
               {/* WhatsApp */}
               <a
-                href="https://wa.me/917589082828"
+                href="https://wa.me/9175890828"
                 target="_blank"
                 rel="noreferrer"
                 className="hud-box group relative flex flex-col justify-between border border-emerald-500/30 bg-emerald-950/15 p-8 backdrop-blur-xl transition-all duration-300 hover:border-emerald-400 hover:shadow-[0_0_35px_rgba(16,185,129,0.15)]"
@@ -82,7 +82,7 @@ export default function ContactPage() {
                   </div>
 
                   <h2 className="mt-6 font-display text-2xl font-black text-white transition-colors group-hover:text-emerald-300 sm:text-3xl">
-                    +91 75890 82828
+                    +91 91758 90828
                   </h2>
 
                   <p className="mt-3 font-body text-sm leading-relaxed text-slate-300">
